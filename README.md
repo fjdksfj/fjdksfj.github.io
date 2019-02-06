@@ -20,7 +20,6 @@ Scenes with different colors are captured especially blue to prove the robustnes
 
 ## <span id="para">Experimental details (#R1)</span>
 ### <span id="calib">Calibration steps (#R1)</span>
-[//]: <> (首先为了确保两路相机完全对齐，我们采用棋盘格标定的方法，并且矫正了枕形畸变.  其次由于棱镜色散的不均匀性，我们使用单色仪标定了不同波长的分布情况确定色散宽度；根据结果移动棱镜位置进行调试，确保色散图像符合成像模型文中的方程5)
 
 First, in order to align two cameras, checkerboard calibration method is used and we further correct pincushion distortion caused by lens. Secondly, due to the non-uniformity of the prism dispersion, we use a monochromator to calibrate the distribution of different wavelengths and check the dispersion width; By fine-tuning the position of the prism in hybrid system to ensure that the acquired images is in accordance with the imaging model in Equation 5 and the delta x is 1 pixel apart.  
 
