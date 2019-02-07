@@ -11,7 +11,7 @@
 
 ## <span id="res">Experimental Results on Real Data (#R3 & #R4)</span>
 
-![image](https://github.com/fjdksfj/fjdksfj.github.io/blob/master/more_res.jpg)
+![image](https://github.com/fjdksfj/fjdksfj.github.io/blob/master/more_res.png)
 
 > Fig. 1: Experimental results on captured image data. The synthetic RGB images, details and the spectral response of scene points are evaluated.
 
