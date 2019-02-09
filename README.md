@@ -22,7 +22,8 @@ Scenes with different colors are captured especially blue to validate our algori
 ### <span id="calib">Calibration details (#R1)</span>
 
 First, in order to align two cameras, checkerboard calibration method is used and we further correct pincushion distortion caused by lens. Secondly, due to the non-uniformity of the prism dispersion, we use a monochromator to calibrate the distribution of different wavelengths and check the dispersion width. Since the prism disperser which leads to
-nonlinear dispersion is used in our system, it is impossible to realize each lambda to be separated by 1 pixel apart. Instead, we precalibrate the non-linear dispersion of different wavelengths, and correct the reconstructed hyperspectral curves with the calibration results.  
+nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
+per pixel equal. Instead, we precalibrate the non-linear dispersion of different wavelengths, and correct the reconstructed hyperspectral curves with the calibration results.  
 
 ### <span id="parameters">Parameters setting(#R1)</span>
 
