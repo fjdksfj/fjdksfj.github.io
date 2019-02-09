@@ -27,7 +27,7 @@ per pixel equal. Instead, we precalibrate the non-linear dispersion of different
 
 ### <span id="parameters">Parameters setting(#R1)</span>
 
-Different coefficients are used to represent the strength of different constraints which determines convergence speed of algorithm. Empirically, by monitoring the convergence direction of temporary variables, and different parameters are set by coarse-to-fine tuning method. It should be noted that these parameters are almost system-independent and fixed in both synthetic and real experiments.
+Different coefficients are used to represent the strength of different constraints which determines convergence speed of algorithm. Empirically, by monitoring the convergence direction of temporary variables,  different parameters are set by coarse-to-fine tuning method. It should be noted that these parameters are almost system-independent and fixed in both synthetic and real experiments.
 
 For experimental reproducibility, hardware parameters are listed in the table below.
 
