@@ -41,7 +41,32 @@ per pixel equal. Instead, we precalibrate the non-linear dispersion of different
 
 Different coefficients are used to represent the strength of different constraints which determines convergence speed of algorithm.
 Different parameters are choosen empirally in a coarse-to-fine tuning method.
-It should be noted that these parameters are almost system-independent and fixed in both synthetic and real experiments.
+It should be noted that these parameters are almost system-independent and fixed in both synthetic and real experiments. 
+
+
+\begin{algorithm}[t]
+  \label{alg: optimization}
+  \caption{Optimization Algorithm}
+  \KwIn{Dispersive blurred image ${\bf D}$ and sharp grey image ${\bf G}$}
+  \KwOut{Reconstructed multispectral image cube ${\bf S}$}
+  {\em //*Initialization*//}\\
+  ${\bf S}_\lambda = {\bf G} / N_\lambda$; ~~~ {\em //*$N_\lambda$ is the number of channels.*//} \\
+  $\beta_{cs} = 1$; ~~~ $\lambda_{side} = 100$ \;
+  \While{$OutIter < MaxOuterIter$}{
+    \For{$MidIter = 1 \to MaxMidIter$}{
+      {\em //*Lookup table for solving ${\bf Q}$-subproblem*//} \\
+      ${\bf Q}_{cs}$ = lookup2Dtable($\nabla {\bf G}$, $\nabla {\bf S}$)\;
+      {\em //*CG iteration for solving ${\bf S}$-subproblem*//} \\
+      \While{$InnerIter \le MaxInnerIter$}{
+        Conjugate Gradient Optimaization for Eq.~\ref{equ: Ssub}. \;
+        \If{$ ||\Delta {\bf S}||_2 \le 10^{-7} $}{Break\;}
+        InnerIter = InnerIter + 1\;
+      }
+    }
+    $\beta_{cs} = \sqrt{2}{\beta_{cs}}$; ~~ $\lambda_{side} = \sqrt{2}{\lambda_{side}}$\;
+  }
+\end{algorithm}
+
 
 For experimental reproducibility, hardware parameters are listed in the table below.
 
