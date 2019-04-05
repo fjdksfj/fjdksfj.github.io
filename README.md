@@ -29,9 +29,7 @@ Step 3, the dispersion nonlinearity results in uneven energy distribution along 
 
 Step 4, we further correcte the integral curves instead of the RGB curves measured by the monochromator by solving the equation as following (taken the R channel as an example):
 
-$$
-R R_c S = b
-$$
+$ RR_cS = b $
 
 since it is difficult to accurately calibrate the spectral transmission of optical lens and the spectral curves of RGB sensor in practice, it is normal that there are some color artifacts in the synthesized rgb images.
 Since the prism disperser which leads to nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
