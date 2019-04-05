@@ -28,9 +28,7 @@ Step 2, due to the non-uniformity of the prism dispersion, we use a monochromato
 Step 3, the dispersion nonlinearity results in uneven energy distribution along wavelength, and here we use nonlinear interpolation according by the non-uniform wavelength distribution we have already calabrated in step 2.
 
 Step 4, we further perform white balance by correcting the integral curves instead of the RGB curves measured by the monochromator through solving the equation as following (taken the R channel as an example):
-
-$ RR_cS = b $
-
+$$ RR_cS = b \tag{1} $$
 where, R means the integral curve of red channel in RGB sensors measured by the monochromator, $R_c$ is a diagonal matrix the elements on the diagonal are correction factors for different channels which may be caused by spectral transmission curve of lens. $b$ means the captures value of red channel. If the number of points where the spectra are known is greater than the number of channels, then $R_c$  can be solved.
 
 since it is difficult to accurately calibrate the spectral transmission of optical lens and the spectral curves of RGB sensor in practice, it is normal that there are some color artifacts in the synthesized rgb images.
