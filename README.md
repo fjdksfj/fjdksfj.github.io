@@ -45,6 +45,7 @@ It should be noted that these parameters are almost system-independent and fixed
 
  
 <div align=center>![image](https://github.com/fjdksfj/fjdksfj.github.io/blob/master/alg.jpg)
+</div>
 
 > Alg. 1: The main steps of our reconstruction algorithm.
 
