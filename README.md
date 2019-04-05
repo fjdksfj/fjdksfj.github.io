@@ -31,7 +31,7 @@ Step 4, we further perform white balance by correcting the integral curves inste
 
 $ RR_cS = b $
 
-where, R means the integral curve of red channel in RGB sensors measured by the monochromator, $R_c$ is a diagonal matrix the elements on the diagonal are correction factors for different channels which may be caused by spectral transmission curve of lens. $b$ means the captures value of red channel. 
+where, R means the integral curve of red channel in RGB sensors measured by the monochromator, $R_c$ is a diagonal matrix the elements on the diagonal are correction factors for different channels which may be caused by spectral transmission curve of lens. $b$ means the captures value of red channel. If the number of points where the spectra are known is greater than the number of channels, then $R_c$  can be solved.
 
 since it is difficult to accurately calibrate the spectral transmission of optical lens and the spectral curves of RGB sensor in practice, it is normal that there are some color artifacts in the synthesized rgb images.
 Since the prism disperser which leads to nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
