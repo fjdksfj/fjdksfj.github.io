@@ -9,7 +9,7 @@
     * [Algorithm details](#parameters)
 
 
-### <span id="res">Experimental Results on Real Data (#R3 & #R4)</span>
+### <span id="res">Experimental Results on Real Data </span>
 
 ![image](https://github.com/fjdksfj/fjdksfj.github.io/blob/master/more_res.png)
 
