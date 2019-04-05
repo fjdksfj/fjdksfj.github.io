@@ -22,12 +22,17 @@ Scenes with different colors are captured especially blue to validate our algori
 #### <span id="calib">Calibration details (#R1)</span>
 
 Step 1, in order to align two cameras, checkerboard calibration method is used and we further correct pincushion distortion caused by lens. 
+
 Step 2, due to the non-uniformity of the prism dispersion, we use a monochromator to calibrate the distribution of different wavelengths and check the dispersion width.
+
 Step 3, the dispersion nonlinearity results in uneven energy distribution along wavelength, and here we use nonlinear interpolation according by the non-uniform wavelength distribution we have already calabrated in step 2.
+
 Step 4, we further correcte the integral curves instead of the RGB curves measured by the monochromator by solving the equation as following (taken the R channel as an example):
+
 $$
 R R_c S = b
 $$
+
 since it is difficult to accurately calibrate the spectral transmission of optical lens and the spectral curves of RGB sensor in practice, it is normal that there are some color artifacts in the synthesized rgb images.
 Since the prism disperser which leads to nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
 per pixel equal. Instead, we precalibrate the non-linear dispersion of different wavelengths, and correct the reconstructed hyperspectral curves with the calibration results.  
