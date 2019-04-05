@@ -18,8 +18,8 @@
 As shown in Fig. 1, the first column is the  captured dispersive image and the second column is captured sharp gray image. Based on the reconstructed multispectral images from these two measurements, the synthetic images by integrating with the camera response curves are shown in the third column. Physically captured RGB images by an additional RGB camera are in the forth column. Our hybrid system and pixel-wise reconstruction algorithm could recover the spatial details, as shown in the fifth and sixth columns. Futhermore, the spectral response curves  at golden points are shown in the last column to directly verify the effectiveness of our method. 
 Scenes with different colors are captured especially blue to validate our algorithm.
 
-### <span id="para">Experimental details (#R1)</span>
-#### <span id="calib">Calibration details (#R1)</span>
+### <span id="para">Experimental details </span>
+#### <span id="calib">Calibration details </span>
 
 Step 1, in order to align two cameras, checkerboard calibration method is used and we further correct pincushion distortion caused by lens. 
 
@@ -35,7 +35,7 @@ since it is difficult to accurately calibrate the spectral transmission of optic
 Since the prism disperser which leads to nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
 per pixel equal. Instead, we precalibrate the non-linear dispersion of different wavelengths, and correct the reconstructed hyperspectral curves with the calibration results.  
 
-#### <span id="parameters">Algorithm details(#R1)</span>
+#### <span id="parameters">Algorithm details</span>
 
 Different coefficients are used to represent the strength of different constraints which determines convergence speed of algorithm.
 Different parameters are choosen empirally in a coarse-to-fine tuning method.
