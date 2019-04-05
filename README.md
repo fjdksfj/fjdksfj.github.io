@@ -50,6 +50,9 @@ It should be noted that these parameters are almost system-independent and fixed
  > Alg. 1: The main steps of our reconstruction algorithm.
 </div>
 
+Alg. 1 demonstrate the main steps of our reconstruction algorithm. Three loops are applied to make the algorithm converge gradually. The outer loop is used to iteratively increase the weight parameters $\beta_{cs}$ and $\lambda_{side}$. The middle loop is utilized for alternatively optimize the Q-subproblem and S-subproblem. The inner loop is applied to solving the S-problem using CG algorithm iteratively.  In this paper, we empirically set $\lambda_{DoB} = 10$, $\lambda_{cs} = 1e-5$, and $\lambda_{side}^0 = 100$ initially and $\lambda_{side}^{t+1} = \sqrt{2}\lambda_{side}^{t}$ during outer iterations, $t$ denotes the number of outer iteration.
+To balance the performance and running time, we set set $MaxOuterIter = 6$, $MaxMidIter = 5$, and $MaxInnerIter = 100$ to terminate the algorithm, in case the algorithm does not converge into the $10^{-7}$ error bands in time.
+
 
 
 
