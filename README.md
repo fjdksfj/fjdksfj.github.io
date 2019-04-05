@@ -6,7 +6,7 @@
 * [Experimental details](#para)
    
     * [Calibration details](#calib)
-    * [Parameters setting](#parameters)
+    * [Algorithm details](#parameters)
 
 
 ### <span id="res">Experimental Results on Real Data (#R3 & #R4)</span>
@@ -35,7 +35,7 @@ since it is difficult to accurately calibrate the spectral transmission of optic
 Since the prism disperser which leads to nonlinear dispersion is used in our system, it is impossible to keep the wavelength interval
 per pixel equal. Instead, we precalibrate the non-linear dispersion of different wavelengths, and correct the reconstructed hyperspectral curves with the calibration results.  
 
-#### <span id="parameters">Parameters setting(#R1)</span>
+#### <span id="parameters">Algorithm details(#R1)</span>
 
 Different coefficients are used to represent the strength of different constraints which determines convergence speed of algorithm.
 Different parameters are choosen empirally in a coarse-to-fine tuning method.
