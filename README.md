@@ -63,5 +63,6 @@ For experimental reproducibility, hardware parameters are listed in the table be
 
 
 As for running time, the iterative method takes about 2 hours to converge on the Intel(R)Core(TM)i7-6700K CPU @4.00GHz hardware platform with 32.0G RAM.
+
 As shown in Fig. 6, our system is based on prism.
 The prism can introduce additional anisotropy aberrations, which may deteriorate the quality of our imaging system. This is a common problem of prism-based spectrometers, and it can be greatly alleviated by adopting Amici prism (exactly what we use). The Amici prism is a completely symmetrical structure with three prisms. Due to its special materials and structures, it can improve the nonlinearity of dispersion, line bending and band bending. 
