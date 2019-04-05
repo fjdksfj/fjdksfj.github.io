@@ -1,4 +1,4 @@
-## Rebuttal Material: Spectral Reconstruction from Dispersive Blur:Approaching Full Light Throughput Spectral Imager
+##  Spectral Reconstruction from Dispersive Blur:Approaching Full Light Throughput Spectral Imager
 
 ### Experiment :
 
